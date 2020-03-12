@@ -1,0 +1,150 @@
+body {
+    background-color: rgba(0, 191, 191, 1);
+    position: relative;
+}
+
+#Title1{
+    position: absolute;
+    left: 132px;
+    top: 71px;
+    width: 289px;
+    height: 45px;
+    display: flex;
+    opacity: 0.9;
+    font-family: 'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';
+    font-weight: 650;
+    font-style: normal;
+    color:#FFFFFF;
+}
+#Title1 p
+{
+    font-size: 32px;
+    text-align: left;
+    letter-spacing: normal;
+}
+
+#Title2{
+    position: absolute;
+    left: 132px;
+    top: 71px;
+    width: 289px;
+    height: 45px;
+    display: flex;
+    opacity: 0.9;
+    font-family: 'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';
+    font-weight: 650;
+    font-style: normal;
+    color:#FFFFFF;
+}
+
+#Label{
+    border-radius:20px;
+    background-color:#FFFFFF;
+    position: absolute;
+    left: 132px;
+    top: 160px;
+    width: 760px;
+    height: 1250px;
+}
+
+#Navigation {
+    width: 760px;
+    height: 56px; 
+    display: flex;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    box-shadow: none;
+}
+.Nav{
+    box-sizing: border-box;
+    width: 100%;
+    top: 8px;
+    position: absolute;
+    width: 87px;
+    height: 25px;
+    display: flex;
+    font-family: 'PingFangSC-Regular', 'PingFang SC';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color:  #000000;
+
+}
+.Nav:hover
+ {
+    color: rgba(0, 191, 191, 1);
+ }
+#Nav1{
+    left: 86px;
+}
+
+#Nav2{
+    left: 253px;
+}
+
+#Nav3{
+    left: 418px;
+}
+
+#Nav4{
+    left: 584px;
+}
+
+.Lab{
+    width: 760px;
+    height: 1159px;
+    background: inherit;
+    /* background-color: rgba(255, 255, 255, 1);*/
+    border: none;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    box-shadow: none;
+}
+
+#Lab1 {
+    
+    /* background-color: rgba(255, 255, 255, 1);*/
+    background-color: red;
+}
+#DateLab{
+    width: 760px;
+    height: 200px;
+    display: flex;
+    background-color:rosybrown;    
+}
+.Type {
+   
+    width: 253px;
+    height: 25px;
+}
+.Type p{
+    margin:0 auto;
+}
+#MapLab {
+    width: 760px;
+    height: 450px;
+}
+#Map{
+    width: 760px;
+    height: 440px;
+}
+#Lab2 {
+   
+    background-color:yellow;
+    
+}
+
+#Lab3 {
+   
+    background-color:olive;
+    
+}
+
+#Lab4 {
+    
+    background-color:palegreen;
+}
