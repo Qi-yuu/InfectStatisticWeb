@@ -11,7 +11,7 @@
      
 </head>
 <body>
-<div>
+
     <div id="Title1" >
         <p><span>疫情实时大数据报告</span></p>
     </div>
@@ -34,51 +34,58 @@
         <div id="Lab1" class="Lab">
             <div id="Country">
                 <!--中国疫情数据显示 面板 -->
+                <p >&nbsp;数据截止至:xxxx.xx.xx xx:xx</p>
                 <div id="DateLab">
-                    <p style="margin:0 0">数据更新至：XXXX.xx.xx xx:xx</p>
-                    <div class="Type">
-                        <p id="Typetext">现有确诊</p>
-                        <p id="Typedate">XXXX</p>
-                        <p>昨日:xxx</p>
-                    </div>
-                    <div class="Type">
-                        <p id="Typetext">现有疑似</p>
-                        <p id="Typedate">XXXX</p>
-                        <p>昨日:xxx</p>
-                    </div>
-                    <div class="Type">
-                        <p id="Typetext">现有重症</p>
-                        <p id="Typedate">XXXX</p>
-                        <p>昨日:xxx</p>
-                    </div>
-                    <div class="Type">
-                        <p id="Typetext">累计确诊</p>
-                        <p id="Typedate">XXXX</p>
-                        <p>昨日:xxx</p>
-                    </div>
-                    <div class="Type">
-                        <p id="Typetext">累计治愈</p>
-                        <p id="Typedate">XXXX</p>
-                        <p>昨日:xxx</p>
-                    </div>
-                    <div class="Type">
-                        <p id="Typetext">累计死亡</p>
-                        <p id="Typedate">XXXX</p>
-                        <p>昨日:xxx</p>
-                    </div>
+                        <div class="Type">
+                            <p>现有确诊</p>
+                            <p style="color: #e66f1e;">XXXX</p>
+                            <span>昨日:</span><span style="color: #e66f1e;">xxx</span>
+                        </div>
+                        <div class="Type" style="width: 250px;height: 40px;">
+                            <p>现有疑似</p>
+                            <p style="color:#f7c325;">XXXX</p>
+                            <span>昨日:</span><span style="color:#f7c325;">xxx</span>
+                        </div>
+                        <div class="Type" style="width: 250px;height: 40px;">
+                            <p>现有重症</p>
+                            <p style="color: #1386b7">XXXX</p>
+                            <span>昨日:</span><span style="color: #1386b7">xxx</span>
+                        </div>
+                        <div class="Type" style="width: 250px;height: 40px;">
+                            <p>累计确诊</p>
+                            <p style="color: #df2d25">XXXX</p>
+                            <span>昨日</span><span style="color: #df2d25">XXX</span>
+                        </div>
+                        <div class="Type">
+                            <p>累计治愈</p>
+                            <p style="color:#00bfbf">XXXX</p>
+                            <span>昨日:</span><span style="color:#00bfbf">xxx</span>
+                        </div>
+                        <div class="Type">
+                            <p>累计死亡</p>
+                            <p style="color:#333333">XXXX</p>
+                            <span>昨日:</span><span style="color:#333333">xxx</span>
+                        </div>
                 </div>
-
+        
                 <!--中国疫情地图显示 面板 -->
                 <div id="MapLab">
-                    <p>全国累计确诊人数</p>
+                    <p style="padding-top:5px;">全国累计确诊人数</p>
+                    <div id="Map"></div>
+                    <script type="text/javascript" src="JS/map.js"></script>  
+                </div>
+
+                 <!--中国疫情地图显示 面板 -->
+                <div id="ProLab">
                     <div id="Map"></div>
                     <script type="text/javascript" src="JS/map.js"></script>  
                 </div>
                 
             </div>
+
         </div>    
     
     </div>
-</div>
+
 </body>
 </html>

@@ -1,32 +1,53 @@
+span {
+    font-size: 14px;
+}
 .Nav{
     
     top: 23px;    
 }
-
+#Label{
+    height: 1250px;
+}
 
 
 #Lab1 {
-    background-color: red;
+    background-color:white;
+    height: 1250px;
 }
 #DateLab{
-    width: 760px;
-    height: 200px;
+    text-align: center;
+    border-radius:7px;
+    background-color:rgba(242, 242, 242, 1);
+    width: 750px;
+    height: 250px;
     display: flex;
-    background-color:rosybrown;    
+}  
+
+#Date{
+    width: 750px;
+    height: 220px;
+    display: flex;
+    background-color:wheat;    
+  
 }
 .Type {
-   
-    width: 253px;
-    height: 25px;
+    width: 250px;
+    height: 40px;
 }
 .Type p{
     margin:0 auto;
 }
 #MapLab {
-    width: 760px;
+    
+    text-align: center;
+    border-radius:7px;
+    background-color:rgba(242, 242, 242, 1);
+    margin:0 auto;
+    width: 750px;
     height: 450px;
 }
 #Map{
-    width: 760px;
-    height: 440px;
+    margin:0 auto;
+    width: 720px;
+    height: 395px;
 }
