@@ -1,11 +1,13 @@
- 
+ /*
+ ChinaChart用于获取全国 新增、感染、治愈、死亡人数统计表
+ */
  
  // 基于准备好的dom，初始化echarts实例
- var myChart = echarts.init(document.getElementById('Pro'));
+ var myChart = echarts.init(document.getElementById('China'));
  // 指定图表的配置项和数据
  myChart.setOption({
           title: {
-text: 'xx省 新增确诊趋势'
+text: '全国 疫情趋势图'
 },
 tooltip: {
 trigger: 'axis'

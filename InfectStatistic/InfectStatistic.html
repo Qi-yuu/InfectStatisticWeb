@@ -16,7 +16,8 @@
         <p>疫情实时大数据报告</p>
     </div>
     <div id="Title2">
-        <p>新型冠状病毒肺炎</p>
+        <p>新型冠状病毒肺炎</p> 
+    </div>
     </div>    
     
     <div id="Label">
@@ -32,11 +33,18 @@
 
         <!--疫情动态 面板-->
         <div id="Lab1" class="Lab">
-            <p>&nbsp;&nbsp;输入查询日期：<input type="text" name="pin" maxlength="18" /><input type="submit" value="查找"/></p>
                 <!--中国疫情数据显示 面板 -->
+                <p>&nbsp;&nbsp;输入查询日期：
+                    <input type="text" name="Find" maxlength="18" /><input type="submit" value="查找"/></p> 
+<!--
+数据截止至日期需要修改  上一行submit提交查找日期
+--> 
             <span >&nbsp;&nbsp;数据截止至:xxxx.xx.xx xx:xx</span>
             <div id="DateLab">
                 <div>
+<!--
+疑似确诊XXXX数量需要修改
+-->
                     <div class="Type">
                         </br>
                         <p>现有疑似</p>
@@ -66,9 +74,18 @@
         
             <!--中国疫情地图显示 面板 -->
             <div id="MapLab">
-                <p style="padding-top:5px;">全国累计确诊人数</p>
+                <h3 style="padding-top:5px;">全国累计确诊人数</h3>
                 <div id="Map"></div>
+<!--
+src="JS/Map.js"需要修改 实现地图
+-->
                 <script type="text/javascript" src="JS/Map.js"></script>  
+                
+                <div id="China"></div>
+<!--
+JS/ChinaChart.js需要修改 实现全国疫情图表
+-->
+                <script type="text/javascript" src="JS/ChinaChart.js"></script>  
             </div>
     
         </div>    

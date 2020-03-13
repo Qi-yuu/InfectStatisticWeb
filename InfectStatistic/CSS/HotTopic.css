@@ -1,5 +1,10 @@
+
 #Lab3 {
-   
-    background-color:yellow;
+    margin:0 auto;
+    height: 550px;
+    width: 730px;
+    border-radius:15px;
+    background-color:rgba(242, 242, 242, 1);
 }
+
 

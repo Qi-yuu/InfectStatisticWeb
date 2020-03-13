@@ -1,3 +1,7 @@
+/*
+ Map用于获取全国地图及各省份感染人数
+ */
+
 var mydata = [  
     {name: '北京',value: '157' },{name: '天津',value: '36'},  
     {name: '上海',value: '58' },{name: '重庆',value: '186'},  

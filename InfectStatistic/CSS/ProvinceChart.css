@@ -28,6 +28,7 @@ span {
     width: 250px;
     height: 90px;
 }
+
 .Type p{
     margin:0 auto;
 }
@@ -35,7 +36,6 @@ span {
 #ProLab {
     text-align: center;
     top:10px;
-    background-color:rgba(242, 242, 242, 1);
     margin:0 auto;
     width: 750px;
     height: 550px;
