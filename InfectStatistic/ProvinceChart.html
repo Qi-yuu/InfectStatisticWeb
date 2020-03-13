@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="CSS/Head.css">
+    <link rel="stylesheet" href="CSS/ProvinceChart.css">
+    <title>InfectStatisticWeb</title>
+    
+    <script type="text/javascript" src="JS/echarts.min.js" ></script>
+    <script type="text/javascript" src="JS/china.js" ></script>
+     
+</head>
+<body>
+
+    <div id="Title1" >
+        <p>疫情实时大数据报告</p>
+    </div>
+    <div id="Title2">
+        <p>新型冠状病毒肺炎</p>
+    </div>    
+    
+    <div id="Label">
+    
+
+        <!--导航栏-->
+        <div id="Navigation">
+            <div id="Nav1" class="Nav"><a href="InfectStatistic.html">疫情动态</a></div>
+            <div id="Nav2" class="Nav"><a href="Migration.html">迁徙地图</a></div>
+            <div id="Nav3" class="Nav"><a href="HotTopic.html">全民热搜</a></div>
+            <div id="Nav4" class="Nav"><a href="RealTimeNews.html">实时播报</a></div>
+        </div>
+
+        <!--省份图表 面板-->
+        <div id="Lab5" class="Lab">
+
+            <!--省份疫情数据显示 面板 -->
+
+            <!--获得省份名称-->
+            <h3>&nbsp;&nbsp;Province</h3>
+            <span >&nbsp;&nbsp;数据截止至:xxxx.xx.xx xx:xx</span>
+
+            <!--获得该省份具体数据-->
+            <div id="DateLab">
+                <div class="Type">
+                    </br>
+                    <p>现有疑似</p>
+                    <p style="color:#f7c325;">XXXX</p>
+                    <span>昨日:</span><span style="color:#f7c325;">xxx</span>
+                </div>
+                <div class="Type">
+                    </br>
+                    <p>累计确诊</p>
+                    <p style="color: #df2d25">XXXX</p>
+                    <span>昨日:</span><span style="color: #df2d25">xxx</span>
+                </div>
+                <div class="Type">
+                    </br>
+                    <p>累计治愈</p>
+                    <p style="color:#00bfbf">XXXX</p>
+                    <span>昨日:</span><span style="color:#00bfbf">xxx</span>
+                </div>
+                <div class="Type">
+                    </br>
+                    <p>累计死亡</p>
+                    <p style="color:#333333">XXXX</p>
+                    <span>昨日:</span><span style="color:#333333">xxx</span>
+                </div>                
+            </div>
+
+            <!--省份图表 面板 -->
+            <div id="ProLab">
+                <div id="Pro"></div>
+                <script type="text/javascript" src="JS/ProChart.js"></script>  
+            </div>
+        </div>    
+    
+    </div>
+
+</body>
+</html>

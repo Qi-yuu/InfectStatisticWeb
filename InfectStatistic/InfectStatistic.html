@@ -13,10 +13,10 @@
 <body>
 
     <div id="Title1" >
-        <p><span>疫情实时大数据报告</span></p>
+        <p>疫情实时大数据报告</p>
     </div>
     <div id="Title2">
-        <p><span>新型冠状病毒肺炎</span></p>
+        <p>新型冠状病毒肺炎</p>
     </div>    
     
     <div id="Label">
@@ -32,57 +32,45 @@
 
         <!--疫情动态 面板-->
         <div id="Lab1" class="Lab">
-            <div id="Country">
+            <p>&nbsp;&nbsp;输入查询日期：<input type="text" name="pin" maxlength="18" /><input type="submit" value="查找"/></p>
                 <!--中国疫情数据显示 面板 -->
-                <p >&nbsp;数据截止至:xxxx.xx.xx xx:xx</p>
-                <div id="DateLab">
-                        <div class="Type">
-                            <p>现有确诊</p>
-                            <p style="color: #e66f1e;">XXXX</p>
-                            <span>昨日:</span><span style="color: #e66f1e;">xxx</span>
-                        </div>
-                        <div class="Type" style="width: 250px;height: 40px;">
-                            <p>现有疑似</p>
-                            <p style="color:#f7c325;">XXXX</p>
-                            <span>昨日:</span><span style="color:#f7c325;">xxx</span>
-                        </div>
-                        <div class="Type" style="width: 250px;height: 40px;">
-                            <p>现有重症</p>
-                            <p style="color: #1386b7">XXXX</p>
-                            <span>昨日:</span><span style="color: #1386b7">xxx</span>
-                        </div>
-                        <div class="Type" style="width: 250px;height: 40px;">
-                            <p>累计确诊</p>
-                            <p style="color: #df2d25">XXXX</p>
-                            <span>昨日</span><span style="color: #df2d25">XXX</span>
-                        </div>
-                        <div class="Type">
-                            <p>累计治愈</p>
-                            <p style="color:#00bfbf">XXXX</p>
-                            <span>昨日:</span><span style="color:#00bfbf">xxx</span>
-                        </div>
-                        <div class="Type">
-                            <p>累计死亡</p>
-                            <p style="color:#333333">XXXX</p>
-                            <span>昨日:</span><span style="color:#333333">xxx</span>
-                        </div>
+            <span >&nbsp;&nbsp;数据截止至:xxxx.xx.xx xx:xx</span>
+            <div id="DateLab">
+                <div>
+                    <div class="Type">
+                        </br>
+                        <p>现有疑似</p>
+                        <p style="color:#f7c325;">XXXX</p>
+                        <span>昨日:</span><span style="color:#f7c325;">xxx</span>
+                    </div>
+                    <div class="Type">
+                        <p>累计确诊</p>
+                        <p style="color: #df2d25">XXXX</p>
+                        <span>昨日:</span><span style="color: #df2d25">xxx</span>
+                    </div>
                 </div>
-        
-                <!--中国疫情地图显示 面板 -->
-                <div id="MapLab">
-                    <p style="padding-top:5px;">全国累计确诊人数</p>
-                    <div id="Map"></div>
-                    <script type="text/javascript" src="JS/map.js"></script>  
+                <div>
+                    <div class="Type">
+                        </br>
+                        <p>累计治愈</p>
+                        <p style="color:#00bfbf">XXXX</p>
+                        <span>昨日:</span><span style="color:#00bfbf">xxx</span>
+                    </div>
+                    <div class="Type">
+                        <p>累计死亡</p>
+                        <p style="color:#333333">XXXX</p>
+                        <span>昨日:</span><span style="color:#333333">xxx</span>
+                    </div>
                 </div>
-
-                 <!--中国疫情地图显示 面板 -->
-                <div id="ProLab">
-                    <div id="Map"></div>
-                    <script type="text/javascript" src="JS/map.js"></script>  
-                </div>
-                
             </div>
-
+        
+            <!--中国疫情地图显示 面板 -->
+            <div id="MapLab">
+                <p style="padding-top:5px;">全国累计确诊人数</p>
+                <div id="Map"></div>
+                <script type="text/javascript" src="JS/Map.js"></script>  
+            </div>
+    
         </div>    
     
     </div>
