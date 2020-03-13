@@ -1,0 +1,32 @@
+.Nav{
+    
+    top: 23px;    
+}
+
+
+
+#Lab1 {
+    background-color: red;
+}
+#DateLab{
+    width: 760px;
+    height: 200px;
+    display: flex;
+    background-color:rosybrown;    
+}
+.Type {
+   
+    width: 253px;
+    height: 25px;
+}
+.Type p{
+    margin:0 auto;
+}
+#MapLab {
+    width: 760px;
+    height: 450px;
+}
+#Map{
+    width: 760px;
+    height: 440px;
+}

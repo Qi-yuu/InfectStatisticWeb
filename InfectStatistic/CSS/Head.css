@@ -44,7 +44,7 @@ body {
     left: 132px;
     top: 160px;
     width: 760px;
-    height: 1250px;
+    height: 1215px;
 }
 
 #Navigation {
@@ -54,31 +54,29 @@ body {
     background-color: rgba(255, 255, 255, 1);
     border: none;
     border-radius: 20px;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    box-shadow: none;
 }
+
 .Nav{
     box-sizing: border-box;
-    width: 100%;
     top: 8px;
     position: absolute;
-    width: 87px;
-    height: 25px;
+    width: 87px; 
+    height: 25px;  
     display: flex;
     font-family: 'PingFangSC-Regular', 'PingFang SC';
     font-weight: 400;
     font-style: normal;
     font-size: 15px;
     color:  #000000;
-
 }
-.Nav:hover
- {
+
+.Nav a:hover{
     color: rgba(0, 191, 191, 1);
- }
+    border-bottom: 2px solid rgba(0, 191, 191, 1);
+}
 #Nav1{
     left: 86px;
+    
 }
 
 #Nav2{
@@ -92,7 +90,6 @@ body {
 #Nav4{
     left: 584px;
 }
-
 .Lab{
     width: 760px;
     height: 1159px;
@@ -105,46 +102,4 @@ body {
     box-shadow: none;
 }
 
-#Lab1 {
-    
-    /* background-color: rgba(255, 255, 255, 1);*/
-    background-color: red;
-}
-#DateLab{
-    width: 760px;
-    height: 200px;
-    display: flex;
-    background-color:rosybrown;    
-}
-.Type {
-   
-    width: 253px;
-    height: 25px;
-}
-.Type p{
-    margin:0 auto;
-}
-#MapLab {
-    width: 760px;
-    height: 450px;
-}
-#Map{
-    width: 760px;
-    height: 440px;
-}
-#Lab2 {
-   
-    background-color:yellow;
-    
-}
-
-#Lab3 {
-   
-    background-color:olive;
-    
-}
-
-#Lab4 {
-    
-    background-color:palegreen;
-}
+a {text-decoration: none}
