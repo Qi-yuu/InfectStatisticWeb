@@ -1,4 +1,5 @@
 <!--具体省份折线图-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,6 +21,7 @@
         <p>新型冠状病毒肺炎</p>
     </div>    
     
+    <!--动态面板，包含疫情动态、迁徙地图、全民热搜、实时播报-->
     <div id="Label">
     
 
@@ -35,7 +37,6 @@
         <div id="Lab5" class="Lab">
 
             <!--省份疫情数据显示 面板 -->
-
 <!--
 省份名称 数据截至日期需要修改
 -->
@@ -43,6 +44,8 @@
             <h3>&nbsp;&nbsp;Province</h3>
             <span >&nbsp;&nbsp;数据截止至:xxxx.xx.xx xx:xx</span>
             <input type="button" id="ReturnButton" value="全国数据" onClick="location.href='InfectStatistic.html'"/>
+            
+
             <!--获得该省份具体数据-->
 <!--
 疑似等人数需要修改
@@ -74,7 +77,13 @@
                 </div>                
             </div>
         </br></br></br>
+
             <!--省份图表 面板 -->
+ <!--
+点击不同按钮时，图表需要刷新
+changeColor()仅用于修改按钮样式
+与图标刷新动态无关
+-->        
             <div id="ProLab">
                 <div id="Pro"></div>
                 <script type="text/javascript" src="JS/ProChart.js"></script>  

@@ -1,5 +1,21 @@
-#Lab3 {
-   
-    background-color:olive;
+#Lab2 {
     
+}
+
+#In{
+    margin:0 auto;
+    height: 400px;
+    width: 730px;
+    border-radius:15px;
+    background-color:rgba(242, 242, 242, 1);
+
+}
+
+#Out{
+    margin:0 auto;
+    height: 400px;
+    width: 730px;
+    border-radius:15px;
+    background-color:rgba(242, 242, 242, 1);
+
 }

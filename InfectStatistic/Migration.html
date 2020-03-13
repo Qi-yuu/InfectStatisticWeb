@@ -1,3 +1,4 @@
+<!--迁入迁出-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +20,7 @@
     <!--动态面板，包含疫情动态、迁徙地图、全民热搜、实时播报-->
     <div id="Label">
     
-         <!--导航栏-->
+         <!--导航栏 -->
          <div id="Navigation">
             <div id="Nav1" class="Nav"><p><a href="InfectStatistic.html">疫情动态</a></p></div>
             <div id="Nav2" class="Nav"><p><a href="Migration.html">迁徙地图</a></p></div>
@@ -27,11 +28,22 @@
             <div id="Nav4" class="Nav"><p><a href="RealTimeNews.html">实时播报</a></p></div>
         </div>
 
+
     
         <!--迁徙地图 面板-->
-        <div id="Lab2" class="Lab" style="display: none;">
+<!--
+div id=In，迁入地，修改数据
+-->
+        <div id="Lab2" class="Lab">
             </br>
-            <div><h3 style="text-align:center";>全国热门城市迁移</h3></div>
+            <h3 style="padding-top:5px;text-align:center">热门迁入地</h3>
+            <div id="In"></div>
+<!--
+div id=Out，迁出地，修改数据
+-->
+            </br></br>
+            <h3 style="padding-top:5px;text-align:center">热门迁出地</h3>
+            <div id="Out"></div>
         </div>
      
     </div>
