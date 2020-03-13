@@ -1,3 +1,4 @@
+<!--具体省份折线图-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,7 +42,7 @@
             <!--获得省份名称-->
             <h3>&nbsp;&nbsp;Province</h3>
             <span >&nbsp;&nbsp;数据截止至:xxxx.xx.xx xx:xx</span>
-
+            <input type="button" id="ReturnButton" value="全国数据" onClick="location.href='InfectStatistic.html'"/>
             <!--获得该省份具体数据-->
 <!--
 疑似等人数需要修改
@@ -77,6 +78,13 @@
             <div id="ProLab">
                 <div id="Pro"></div>
                 <script type="text/javascript" src="JS/ProChart.js"></script>  
+
+                <div>
+                    <input type="button" id="ipButton" class="Button" value="累计确诊" onClick="changeColor1()"/>
+                    <input type="button" id="cureButton" class="Button" value=" 累计治愈" onClick="changeColor2()"/>
+                    <input type="button" id="deadButton" class="Button" value="累计死亡" onClick="changeColor3()"/>
+                    <input type="button" id="allButton" class="Button" value="数据总览" onClick="changeColor4()"/>
+                </div>   
             </div>
         </div>    
     

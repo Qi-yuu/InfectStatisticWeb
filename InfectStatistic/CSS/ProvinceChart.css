@@ -8,6 +8,19 @@ span {
     top: 23px;    
 }
 
+#ReturnButton{
+    width: 100px;
+    font-size: 16px;
+    box-shadow:0;
+    background-color:white;
+    border-color:  rgba(0, 191, 191, 1);
+    left:410px;
+    bottom: 15px;
+    border-radius: 12px;
+    position: relative;
+    cursor:pointer;                 
+}
+
 #Lab5 {
     background-color:white;
     height: 1215px;
@@ -45,4 +58,17 @@ span {
     margin:0 auto;
     width: 720px;
     height: 500px;
+}
+
+.Button{
+    font-weight: 600;
+    position: relative;
+    width: 150px;
+    height: 30px;
+    box-shadow:0;
+    color: #7f7f7f;
+    background-color:white;
+    border-color: rgba(0, 191, 191, 1);  
+    border-radius: 8px;
+    cursor:pointer;                 
 }
