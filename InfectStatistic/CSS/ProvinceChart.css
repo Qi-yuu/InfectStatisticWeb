@@ -30,10 +30,9 @@ span {
 }
 .Type p{
     margin:0 auto;
-
+}
 
 #ProLab {
-    
     text-align: center;
     top:10px;
     background-color:rgba(242, 242, 242, 1);
@@ -41,6 +40,7 @@ span {
     width: 750px;
     height: 550px;
 }
+
 #Pro{
     margin:0 auto;
     width: 720px;
