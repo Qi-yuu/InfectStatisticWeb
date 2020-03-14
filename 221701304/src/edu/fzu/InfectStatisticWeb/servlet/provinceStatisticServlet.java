@@ -86,7 +86,7 @@ public class provinceStatisticServlet extends HttpServlet {
 						for (int j = 0; j <timeStatistic.size(); j++) 
 						{
 							JSONObject dateData=timeStatistic.getJSONObject(j);
-							rData.put(dateData.getString("date"), dateData.getString("confirmedNum"));	//存取折线图所需数据
+							rData.put(dateData.getString("date"), dateData.getIntValue("confirmedNum"));	//存取折线图所需数据
 						}
 					}
 				}
@@ -95,6 +95,27 @@ public class provinceStatisticServlet extends HttpServlet {
 				JSONObject json = new JSONObject(rData);
 				out.print(json);
 				
+			}
+			else if (type.equals("新增确诊")) 
+			{
+				for (int i = 0; i<provinces.size();i++) {
+					JSONObject data = provinces.getJSONObject(i);
+					String provinceName=data.getString("name");
+					if (provinceName.equals(province))
+					{
+						JSONArray timeStatistic =data.getJSONArray("series");//省份里面每日数据
+						for (int j = 0; j <timeStatistic.size()-1; j++) 
+						{
+							JSONObject currentDateData=timeStatistic.getJSONObject(j);
+							JSONObject lastDayData = timeStatistic.getJSONObject(j+1);
+							rData.put(currentDateData.getString("date"), currentDateData.getIntValue("confirmedNum") - lastDayData.getIntValue("confirmedNum"));	//存取折线图所需数据
+						}
+					}
+				}
+				response.setHeader("content-type", "application/json;charset=UTF-8");//告诉浏览器他发送的什么类型
+				PrintWriter out = response.getWriter();
+				JSONObject json = new JSONObject(rData);
+				out.print(json);
 			}
 			else if (type.equals("累计治愈")) 
 			{
@@ -106,7 +127,7 @@ public class provinceStatisticServlet extends HttpServlet {
 						for (int j = 0; j <timeStatistic.size(); j++) 
 						{
 							JSONObject dateData=timeStatistic.getJSONObject(j);
-							rData.put(dateData.getString("date"), dateData.getString("curesNum"));	//存取折线图所需数据
+							rData.put(dateData.getString("date"), dateData.getIntValue("curesNum"));	//存取折线图所需数据
 						}
 					}
 				}
@@ -125,7 +146,7 @@ public class provinceStatisticServlet extends HttpServlet {
 						for (int j = 0; j <timeStatistic.size(); j++) 
 						{
 							JSONObject dateData=timeStatistic.getJSONObject(j);
-							rData.put(dateData.getString("date"), dateData.getString("deathsNum"));	//存取折线图所需数据
+							rData.put(dateData.getString("date"), dateData.getIntValue("deathsNum"));	//存取折线图所需数据
 						}
 					}
 				}

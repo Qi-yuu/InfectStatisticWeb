@@ -39,8 +39,6 @@ public class provinceServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("ghjghgjgjghjghj");
-		System.out.println(request.getParameter("date"));
 		String province=request.getParameter("province");
 		String date=request.getParameter("date");
 		HttpSession session=request.getSession();	
