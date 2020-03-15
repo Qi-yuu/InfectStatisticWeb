@@ -1,0 +1,74 @@
+span {
+    font-size: 14px;
+    color:#99a6bf;
+}
+
+.Nav{
+    
+    top: 23px;    
+}
+
+#ReturnButton{
+    width: 100px;
+    font-size: 16px;
+    box-shadow:0;
+    background-color:white;
+    border-color:  rgba(0, 191, 191, 1);
+    left:410px;
+    bottom: 15px;
+    border-radius: 12px;
+    position: relative;
+    cursor:pointer;                 
+}
+
+#Lab5 {
+    background-color:white;
+    height: 1215px;
+}
+
+#DateLab{
+    margin:0 auto;
+    text-align: center;
+    border-radius:7px;
+    background-color:rgba(242, 242, 242, 1);
+    width: 750px;
+    height: 100px;
+    display: flex;
+}  
+
+.Type {
+    
+    width: 250px;
+    height: 90px;
+}
+
+.Type p{
+    margin:0 auto;
+}
+
+#ProLab {
+    text-align: center;
+    top:10px;
+    margin:0 auto;
+    width: 750px;
+    height: 550px;
+}
+
+#Pro{
+    margin:0 auto;
+    width: 720px;
+    height: 500px;
+}
+
+.Button{
+    font-weight: 600;
+    position: relative;
+    width: 150px;
+    height: 30px;
+    box-shadow:0;
+    color: #7f7f7f;
+    background-color:white;
+    border-color: rgba(0, 191, 191, 1);  
+    border-radius: 8px;
+    cursor:pointer;                 
+}
